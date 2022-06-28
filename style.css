@@ -19,7 +19,7 @@ header nav a:last-child{
 header nav a{
     text-decoration: none;
     color: rgb(134, 128, 128);
-    font-size: 20px;
+    font-size: 30px;
 }
 /* SECTION-1 sign up */
 .section-1{
@@ -32,18 +32,19 @@ height: 100%;
 }
 .section-1-div-2{
     width: 50%;
+    overflow: hidden;
 }
 .section-1-div-1 p:first-of-type{
     color: rgb(240, 44, 214);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 .section-1-div-1 h1{
-    font-size: 80px;
+    font-size: 100px;
     margin-top: 0;
 }
 .section-1-div-1 p:nth-of-type(2){
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(134, 128, 128);
 }
 .section-1-div-1 button{
@@ -68,33 +69,35 @@ height: 100%;
     justify-content: flex-end;
 }
 .section-2 h3{
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 0;
 }
 .section-2 p{
-    font-size: 20px;
+    font-size: 25px;
 }
 /* SECTION-3 companies */
 .section-3{
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 /* SECTION-4 auction */
 .section-4 h3{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 500;
     margin-bottom: 20px;
 }
 .section-4-div-1 p{
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 50px;
+    color: grey;
 }
 .section-4-div-1 p span{
     text-decoration: underline;
 }
 .boxes{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .box{
     display: grid;
@@ -144,6 +147,9 @@ height: 100%;
     font-size: 18px;
     color: grey;
 }
+.price-2 p img{
+    width: 10px;
+}
 /* SECTION-5 */
 .section-5{
     display: flex ;
@@ -162,10 +168,11 @@ height: 100%;
 .section-5-div-1 p:first-of-type{
     color: rgb(240, 44, 214);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 .section-5-div-1 h1{
-    font-size: 60px;
+    font-size: 80px;
+    font-weight: bold;
     margin-top: 0;
 }
 .section-5-div-1 p:nth-of-type(2){
@@ -176,7 +183,7 @@ height: 100%;
     font-weight: bold;
     padding: 20px 50px;
     border-radius: 35px;
-    font-size: 18px;
+    font-size: 25px;
     background-color: transparent;
     border: 3px solid pink;}
 /* SECTION-6 */
@@ -198,15 +205,19 @@ height: 100%;
     margin-right: 15px;
     color: gray;
 }
+.section-6 p, i{
+    font-size: 25px;
+}
 /* FOOTER */
 footer{
     display: flex;
     justify-content: space-between;
 }
 footer p{
-    font-size: 18px;
+    font-size: 25px;
     color: gray;
 }
+/* <<<<<<MEDIA>>>>>> */
 @media only screen and (max-width: 768px){
     /* BODY */
     body{
@@ -245,6 +256,9 @@ footer p{
         grid-gap: 30px;
         justify-items: center;
         overflow: hidden;
+    }
+    .section-3 img:nth-of-type(4){
+        display: none;
     }
     /* SECTION-4 auction */
     .section-4{
