@@ -207,8 +207,91 @@ footer p{
     font-size: 18px;
     color: gray;
 }
-@media screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
+    /* BODY */
+    body{
+        padding: 0;
+    }
+    /* HEADER */
+    header{
+        padding: 5%;
+    }
+    header nav a{
+        display:none;
+    }
+    /* SECTION-1  */
+    .section-1{
+        padding: 5%;
+        padding-right: 0;
+    }
+    .section-1-div-2{
+        overflow: hidden;
+    }
+    .section-1-div-2 img{
+        width: 450px;
+    }
+    /* SECTION-2 banner */
     .section-2{
+        text-align: center;
+        border-radius: 0;
+        padding: 0;
         width: 100%;
     }
+    /* SECTION-3 companies */
+    .section-3{
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        justify-items: center;
+        overflow: hidden;
+    }
+    /* SECTION-4 auction */
+    .section-4{
+        padding: 5%;
+    }
+    .boxes{
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .box img{
+        width: 400px;
+    }
+    /* SECTION-5 sign up 2 */
+    .section-5{
+        display: flex;
+        justify-content: space-between;
+        padding: 5%;
+    }
+    .section-5 .section-5-div-1{
+        width: 50%;
+    }
+    .section-5 img{
+        width: 250px;
+    }
+   /* SECTION-6 info  */
+   .section-6{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+   }
+   .section-6-div-1{
+    font-size: 30px;
+   }
+   .section-6-div-2{
+    grid-template-columns: repeat(2, 200px);
+    font-size: 30px;
+   }
+   /* FOOTER */
+   footer{
+    padding: 5%;
+    justify-content: left;
+   }
+   footer p:nth-of-type(2){
+    display: none;
+   }
+   footer p:first-of-type{
+    font-size: 30px;
+   }
 }
